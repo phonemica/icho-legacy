@@ -1,0 +1,32 @@
+{
+  "name": "ailotdesktop",
+  "version": "0.0.1",
+  "main": "main.js",
+  "author": "keyilan",
+  "dependencies": {
+    "electron-context-menu": "^0.7.0",
+    "jquery": "^3.1.1",
+    "jsdom": "^9.8.3",
+    "menubar": "^5.1.0",
+    "mongodb": "^2.2.11",
+    "shell": "^0.3.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "description": "document management tool",
+  "devDependencies": {
+    "electron-builder": "^8.6.0",
+    "electron-packager": "^8.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phonemica/ailot_desktop.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phonemica/ailot_desktop/issues"
+  },
+  "homepage": "https://github.com/phonemica/ailot_desktop#readme"
+}
