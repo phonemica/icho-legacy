@@ -1,2 +1,2 @@
 # ailot_desktop
-eventual Toolbox replacement
+A desktop app build with Electron to provide an easy offline/online interface with the Ailot server.
