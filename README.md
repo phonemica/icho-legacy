@@ -12,5 +12,7 @@ Ginkgo is built on Node and distributed with Electron and will work equally well
 
 Ginkgo is still in development. It will be undergoing usability testing in January. Once we're sure it's stable and works as it should on a wide range of hardware, we'll share the details of how to get a copy of your own.
 
-## screenshot
+## Screenshot
+
+pre-release version:
 ![screenshot](http://phonemica.net/github/gink.png)
