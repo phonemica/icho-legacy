@@ -15,4 +15,4 @@ Ichō is still in development. It will be undergoing usability testing in Januar
 ## Screenshot
 
 pre-release version:
-![screenshot](http://phonemica.net/github/gink.png)
+![screenshot](http://phonemica.net/github/icho.png)
