@@ -1,0 +1,18 @@
+<head>
+	<meta charset="UTF-8">
+	<style>
+	body {padding: 20px;font-family: sans-serif; text-align: center; font-size: 18px}
+	</style>
+</head>
+<body>
+	<img src="./img/phologo.png" style="height: 80px; width: auto; padding-bottom: 20px"/><br/>
+	<span id="appname"></span><br/>
+	<small>version <span id="version"></span></small>
+	<script src="system.js"></script>
+	<script src="functions.js"></script>
+	<script>
+	$("#version").html(readableVersion(thisVersion));
+	$("title").html(appName);
+	$("#appname").html(appName);
+	</script>
+<body>
