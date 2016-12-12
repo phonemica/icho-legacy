@@ -6,7 +6,9 @@ Internet access is often poorest in the areas most in need of language documenta
 
 In production versions, the UI will be made as straightforward as possible. After years of developing [Phonemica](http://phonemica.net), we appreciate perhaps more than most how differently different people interact with computers, and what is intuitive in Chicago might not be in Chengdu.
 
-Ichō is built on Node and distributed with Electron and will work equally well on Linux, Windows or macOS. And with automatic updates, Ichō keeps itself up to date without regular large downloads on unreliable mobile tethering connections.
+Ichō is built on Node and distributed with Electron and will work equally well on Linux, Windows or macOS.
+
+Updates will also be checked for automatically whenever an internet connection is present. By updating only the files that need it, Ichō keeps itself up to date without having to rely on repeated large Electron downloads on unreliable internet.
 
 ## Release
 
