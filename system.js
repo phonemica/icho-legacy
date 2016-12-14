@@ -16,8 +16,8 @@ const localDB = new PouchDB('ailot');
 let online = false; // change to true to enable online mode
 let serverFirst = false; // prioritise remote over local
 let liveSynching = false; // live synchronisation
-let un = "ailot"; // admin user for couchdb
-let pw = ""; // admin password for couchdb
+let un = "ailot"; // couchdb user
+let pw = ""; // couchdb password
 var remoteDB = new PouchDB('http://' + un + ':' + pw + '@phonemica.net:5984/ailot');
 
 const appName = "ichō"; // maybe change this at some point
