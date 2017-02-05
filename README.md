@@ -8,7 +8,7 @@ In production versions, the UI will be made as straightforward as possible. Afte
 
 Ichō is built on Node and distributed with Electron and will work equally well on Linux, Windows or macOS.
 
-Updates will also be checked for automatically whenever an internet connection is present. By updating only the files that need it, Ichō keeps itself up to date without having to rely on repeated large Electron downloads on unreliable internet.
+Updates will also be checked for automatically whenever an internet connection is present. By updating only the files that need it, Ichō keeps itself up to date without having to rely on repeated large Electron downloads on unreliable internet. As part of this, there is also the option of live synchronisation between your desktop based edits and the [Ailot Dictionary](https://github.com/phonemica/icho) mobile app.
 
 ## Release
 
@@ -17,4 +17,4 @@ Ichō is still in development. It will be undergoing usability testing in Januar
 ## Screenshot
 
 pre-release version:
-![screenshot](http://phonemica.net/github/icho.png)
+![screenshot](http://phonemica.net/github/icho022017.png)
