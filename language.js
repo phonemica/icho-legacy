@@ -1,3 +1,5 @@
+// This file handles the sorting order for alphabetisation, including handling of digraphs, as called by customSort() elsewhere.
+
 const language = "Phake";
 let order = [
     'a', 'ā', 'á', 'à', 'ä', 'â', 'ã', 'ă', 'ȧ', 'ả', 'å', 'ǎ', 'ȁ', 'ȃ', 'ą', 'ạ', 'ḁ',
@@ -20,7 +22,7 @@ let order = [
     'r',
     's',
     't',
-    'u',
+    'u', 'ü',
     'v',
     'w',
     'x',
