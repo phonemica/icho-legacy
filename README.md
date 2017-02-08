@@ -13,7 +13,10 @@ Updates will also be checked for automatically whenever an internet connection i
 ## Changelog
 
 For now t is mostly for my own reference to know what I've done when.
-    0.0.10 – Searching and custom alphabetical sorting have been fixed.
+
+```
+0.0.10 – Searching and custom alphabetical sorting have been fixed.
+```
 
 ## Release
 
