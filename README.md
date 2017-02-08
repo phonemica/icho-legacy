@@ -10,6 +10,11 @@ Ichō is built on Node and distributed with Electron and will work equally well 
 
 Updates will also be checked for automatically whenever an internet connection is present. By updating only the files that need it, Ichō keeps itself up to date without having to rely on repeated large Electron downloads on unreliable internet. As part of this, there is also the option of live synchronisation between your desktop based edits and the [Ailot Dictionary](https://github.com/phonemica/icho) mobile app.
 
+## Changelog
+
+For now t is mostly for my own reference to know what I've done when.
+    0.0.10 – Searching and custom alphabetical sorting have been fixed.
+
 ## Release
 
 Ichō is still in development. It will be undergoing usability testing in January. Once we're sure it's stable and works as it should on a wide range of hardware, we'll share the details of how to get a copy of your own.
