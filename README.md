@@ -15,8 +15,8 @@ Updates will also be checked for automatically whenever an internet connection i
 For now this is mostly for my own reference to know what I've done when.
 
 ```
-0.0.9 – Searching has been added
 0.0.10 – Custom alphabetical sorting when there are duplicate headwords is now working
+0.0.9 – Searching has been added
 ```
 
 ## Release
