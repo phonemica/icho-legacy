@@ -11,19 +11,20 @@ window.jQuery = require('jquery');
 const PouchDB = require('pouchdb-browser'); // changed from pouchdb to fix a windows issue
 PouchDB.plugin(require('pouchdb-authentication'));
 const localDB = new PouchDB('local');
-console.log(localDB);
+const remoteDB = new PouchDB('http://' + un + ':' + pw + '@phonemica.net:5984/' + dbName);
 
 /* UUID generation */
 const uuid = require('uuid/v1');
 
-/* app settings */
-let online = true; // change to true to enable online mode
-let serverFirst = false; // prioritise remote over local
-let liveSynching = false; // live synchronisation
-let un = "ailot"; // admin user for couchdb
-let pw = "E1c59Z5uO09F1pH"; // admin password for couchdb
-var remoteDB = new PouchDB('http://' + un + ':' + pw + '@phonemica.net:5984/ailot');
+let settings = {},
+	language,
+	user;
 
-// curl ailot:E1c59Z5uO09F1pH@localhost:5984
-const appName = "ichō"; // maybe change this at some point
-const altAppName = "銀杏";
+const displayItem = "lexeme";
+
+$.getJSON("./config.json", function(json) {
+	settings = json;
+	user = settings.username;
+	language = settings.project.language;
+	dbName = settings.project.language.toLowerCase();
+});

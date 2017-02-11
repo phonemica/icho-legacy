@@ -1,0 +1,16 @@
+{
+	"config": {
+		"stayoffline": true,
+		"serverfirst": false,
+		"constantbackups": false,
+		"livesynching": false
+	},
+	"username": "ailot",
+	"project": {
+		"language": "phake",
+		"showscript": true
+	},
+	"ui": {
+		"language": "en"
+	}
+}
