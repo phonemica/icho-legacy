@@ -11,7 +11,8 @@ window.jQuery = require('jquery');
 const PouchDB = require('pouchdb-browser'); // changed from pouchdb to fix a windows issue
 PouchDB.plugin(require('pouchdb-authentication'));
 const localDB = new PouchDB('local');
-const remoteDB = new PouchDB('http://' + un + ':' + pw + '@phonemica.net:5984/' + dbName);
+
+let remoteDB;
 
 /* UUID generation */
 const uuid = require('uuid/v1');
@@ -22,9 +23,22 @@ let settings = {},
 
 const displayItem = "lexeme";
 
-$.getJSON("./config.json", function(json) {
+$.getJSON("config.json", function(json) {
 	settings = json;
-	user = settings.username;
+	user = settings.user.name;backupAllDocs
 	language = settings.project.language;
 	dbName = settings.project.language.toLowerCase();
+	remoteDB = new PouchDB('http://' + un + ':' + pw + '@phonemica.net:5984/' + dbName);
+	setTimeout(function() {
+		if (settings.display.script == true) {
+			showScript();
+		} else {
+			hideScript();
+		}
+	}, 500);
+	setTimeout(function() {
+		if (settings.config.constantbackups == true) {
+			backupAllDocs();
+		}
+	}, 500);
 });
