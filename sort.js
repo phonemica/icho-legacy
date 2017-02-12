@@ -66,16 +66,23 @@ if (language == "Myanmar" || language == "Burmese") {
 }
 
 /* User can select what numeral system they want for counting definitions, senses, examples. */
-count_roman = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"];
-count_arabic = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
-count_devanagari = ["१", "२", "३", "४", "५", "६", "७", "८", "९", "१०"];
-count_thai = ["๑", "๒", "๓", "๔", "๕", "๖", "๗", "๘", "๙", "๑๐"];
-count_myanmar = ["၁", "၂", "၃", "၄", "၅", "၆", "၇", "၈", "၉", "၁၀"];
-count_tiangan = ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"];
-count_dizhi = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"];
-count_bullet = ["•","•","•","•","•","•","•","•","•","•"];
-count_interpunct = ["·","·","·","·","·","·","·","·","·","·"];
+let numerals = [];
+numerals['roman'] = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv", "xvi", "xvii", "xviii", "xix", "xx"];
+numerals['english'] = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+numerals['arabic'] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10","11","12","13","14","15","16","17","18","19","20"];
+numerals['devanagari'] = ["१", "२", "३", "४", "५", "६", "७", "८", "९", "१०", "११", "१२", "१३"];
+numerals['thai'] = ["๑", "๒", "๓", "๔", "๕", "๖", "๗", "๘", "๙", "๑๐"];
+numerals['myanmar'] = ["၁", "၂", "၃", "၄", "၅", "၆", "၇", "၈", "၉", "၁၀"];
+numerals['tiangan'] = ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"];
+numerals['dizhi'] = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"];
+numerals['shongkhae'] = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '১', '০']; // bengali, assamese
+numerals['mashriq'] = ['١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩', '١٠']; // arabic
+numerals['dzongkha'] = ['༡', '༢', '༣', '༤', '༥', '༦', '༧', '༨', '༩', '༡༠'];
+numerals['lao'] = ['໑', '໒', '໓', '໔', '໕', '໖', '໗', '໘', '໙', '໑໐'];
+numerals['khmer'] = ['១', '២', '៣', '៤', '៥', '៦', '៧', '៨', '៩', '១០'];
+numerals['bullet'] = ["•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•", "•"];
+numerals['interpunct'] = ["·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·", "·"];
 
 /* default setting: */
-let example_counting = count_bullet;
-let definition_counting = count_interpunct;
+let example_counting = numerals['bullet'];
+let definition_counting = numerals['interpunct'];
