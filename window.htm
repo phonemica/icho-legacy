@@ -13,73 +13,95 @@
 	<div id='settings'>
 		<div style='width: 100%'>
 			<h2>Settings</h2>
-			<table>
-				<tr>
-					<td colspan=2 class='settingssection'>Backups</td>
-				</tr>
-				<tr>
-					<td>Backup on load</td>
-					<td>
-						<label class="switch tooltip" title="Save a backup every time you open the app">
-							<input type="checkbox" class='settingsswitch' id="switch_constantbackups">
-							<div class="slider round"></div>
-						</label>
-					</td>
-				</tr>
-				<tr>
-					<td colspan=2 class='settingssection'>Network settings</td>
-				</tr>
-				<tr>
-					<td style='min-width: 150px'>Offline only</td>
-					<td style='min-width: 400px'>
-						<label class="switch tooltip" title="enable/disable online access">
-							<input type="checkbox" class='settingsswitch' id="switch_stayoffline">
-							<div class="slider round"></div>
-						</label>
-					</td>
-				</tr>
-				<tr>
-					<td>Server first</td>
-					<td>
-						<label class="switch tooltip" title="Always trust the server database">
-							<input type="checkbox" class='settingsswitch' id="switch_serverfirst">
-							<div class="slider round"></div>
-						</label>
-					</td>
-				</tr>
-				<tr>
-					<td>Live synchronisation</td>
-					<td>
-						<label class="switch tooltip" title="Constant online synchronisation">
-							<input type="checkbox" class='settingsswitch' id="switch_livesynching">
-							<div class="slider round"></div>
-						</label>
-					</td>
-				</tr>
-				<tr>
-					<td colspan=2 class='settingssection'>Display</td>
-				</tr>
-				<tr>
-					<td>Show Phake script</td>
-					<td>
-						<label class="switch tooltip" title="show Phake script">
-							<input type="checkbox" id="settings_showscript">
-							<div class="slider round"></div>
-						</label>
-					</td>
-				</tr>
-				<tr>
-					<td colspan=2 class='settingssection'>User information</td>
-				</tr>
-				<tr>
-					<td>Username</td>
-					<td><input type='text' disabled  id='settings_user_name' class='settingsfield'/></td>
-				</tr>
-				<tr>
-					<td>Password</td>
-					<td><input type='password' disabled id='settings_user_pass' class='settingsfield'/></td>
-				</tr>
-			</table>
+			<table><tr><td>
+				<table>
+					<tr>
+						<td colspan=2 class='settingssection'>Backups</td>
+					</tr>
+					<tr>
+						<td>Backup on load</td>
+						<td>
+							<label class="switch tooltip" title="Save a backup every time you open the app">
+								<input type="checkbox" class='settingsswitch' id="switch_constantbackups">
+								<div class="slider round"></div>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=2 class='settingssection'>Network settings</td>
+					</tr>
+					<tr>
+						<td style='min-width: 150px'>Offline only</td>
+						<td style='min-width: 400px'>
+							<label class="switch tooltip" title="enable/disable online access">
+								<input type="checkbox" class='settingsswitch' id="switch_stayoffline">
+								<div class="slider round"></div>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td>Server first</td>
+						<td>
+							<label class="switch tooltip" title="Always trust the server database">
+								<input type="checkbox" class='settingsswitch' id="switch_serverfirst">
+								<div class="slider round"></div>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td>Live synchronisation</td>
+						<td>
+							<label class="switch tooltip" title="Constant online synchronisation">
+								<input type="checkbox" class='settingsswitch' id="switch_livesynching">
+								<div class="slider round"></div>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=2 class='settingssection'>Display</td>
+					</tr>
+					<tr>
+						<td>Show Phake script</td>
+						<td>
+							<label class="switch tooltip" title="show Phake script">
+								<input type="checkbox" id="settings_showscript">
+								<div class="slider round"></div>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=2 class='settingssection'>User information</td>
+					</tr>
+					<tr>
+						<td>Username</td>
+						<td><input type='text' disabled  id='settings_user_name' class='settingsfield'/></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type='password' disabled id='settings_user_pass' class='settingsfield'/></td>
+					</tr>
+				</table>
+			</td><td style='vertical-align: top'>
+				<table>
+					<tr>
+						<td colspan=2 class='settingssection'>UI Language &amp; numerals</td>
+					</tr>
+					<tr>
+						<td>Definition count</td>
+						<td>
+							<select class="numeralsystem" field="definition" id="count_def">
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Example count</td>
+						<td>
+							<select class="numeralsystem" field="example"  id="count_ex">
+							</select>
+						</td>
+					</tr>
+				</table>
+			</td></tr></table>
 		</div>
 	</div>
 	<log></log>
