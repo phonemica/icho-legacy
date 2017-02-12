@@ -1,0 +1,133 @@
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/theme_light.css">
+	<script></script>
+	<title>Ichō Dictionary</title>
+	<script type="text/javascript" src="./settings/admin.js"></script>
+	<script type="text/javascript" src="./system.js"></script>
+	<script type="text/javascript" src="./sort.js"></script>
+</head>
+<body>
+	<div id='settings'>
+		<div style='width: 100%'>
+			<h2>Settings</h2>
+			<table>
+				<tr>
+					<td colspan=2 class='settingssection'>Backups</td>
+				</tr>
+				<tr>
+					<td>Backup on load</td>
+					<td>
+						<label class="switch tooltip" title="Save a backup every time you open the app">
+							<input type="checkbox" class='settingsswitch' id="switch_constantbackups">
+							<div class="slider round"></div>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 class='settingssection'>Network settings</td>
+				</tr>
+				<tr>
+					<td style='min-width: 150px'>Offline only</td>
+					<td style='min-width: 400px'>
+						<label class="switch tooltip" title="enable/disable online access">
+							<input type="checkbox" class='settingsswitch' id="switch_stayoffline">
+							<div class="slider round"></div>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Server first</td>
+					<td>
+						<label class="switch tooltip" title="Always trust the server database">
+							<input type="checkbox" class='settingsswitch' id="switch_serverfirst">
+							<div class="slider round"></div>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Live synchronisation</td>
+					<td>
+						<label class="switch tooltip" title="Constant online synchronisation">
+							<input type="checkbox" class='settingsswitch' id="switch_livesynching">
+							<div class="slider round"></div>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 class='settingssection'>Display</td>
+				</tr>
+				<tr>
+					<td>Show Phake script</td>
+					<td>
+						<label class="switch tooltip" title="show Phake script">
+							<input type="checkbox" id="settings_showscript">
+							<div class="slider round"></div>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 class='settingssection'>User information</td>
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td><input type='text' disabled  id='settings_user_name' class='settingsfield'/></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type='password' disabled id='settings_user_pass' class='settingsfield'/></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<log></log>
+	<edge class="charcoalbg silver">
+		<div style="position: absolute; top: 0px; height: 50px; width: 50px; color: rgba(226,68,86,1)"> <img src="./img/redlogo.png" style="position: relative; top: 8px; width: 30px; height: auto;"></i>
+		</div>
+		<div id='sidebarbox'>
+			<div class='top'>
+				<i class="fa fa-save fa-2x tooltip" onclick="backupAllDocs(false)" title="save as a file"></i>
+				<i class="fa fa-cloud-upload fa-2x tooltip" onclick="upload()" title="save to the database"></i>
+				<i class="fa fa-undo fa-2x tooltip" onclick="download()" title="undo unsaved changes"></i>
+			</div>
+			<div class='bottom'>
+				<i class="fa fa-refresh fa-2x tooltip" onclick="sync()" title="synchronise with the database"></i>
+				<i class="fa fa-gear fa-2x tooltip" title="settings" id='settingsbutton'></i>
+			</div>
+		</div>
+	</edge>
+	<toolbarleft> <input type='text' id='searchbox' class='tooltip' placeholder='Search' title="Search" /> </toolbarleft>
+	<toolbar></toolbar>
+	<sidebar>
+		<div id="itemlist">
+			<item>
+				<i class="fa fa-spinner fa-pulse fa fa-fw"></i>
+				Loading…
+			</item>
+		</div>
+	</sidebar>
+	<sidebarmenu>
+		<i class="fa fa-plus fa tooltip" onclick="newDoc();" title="add a new entry"></i>
+	</sidebarmenu>
+	<content>
+		Choose an item on the left side to edit.
+	</content>
+	<controls>
+		<div id="controlbuttons"></div>
+		<div id="controltrashbuttons">
+			<i class="fa fa-trash fa bin tooltipleft" onclick="deleteDoc();" title="remove this word"></i>
+		</div>
+	</controls>
+	<statusbarleft> status: </statusbarleft>
+	<statusbar>
+		<status><i class="gold fa fa-ellipsis-h"></i> attempting to connect</status>
+	</statusbar>
+</body>
+<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/tooltipster.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./js/tooltipster.bundle.min.css" />
+<script type="text/javascript" src="./functions.js"></script>
+<script type="text/javascript" src="./ui.js"></script>
+<script type="text/javascript" src="./update.js"></script>

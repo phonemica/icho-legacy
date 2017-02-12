@@ -1,0 +1,203 @@
+@font-face {
+	font-family: 'phake'; /* should match language.toLowerCase() */
+	src: url('../fonts/phake.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'banchob';
+	src: url('../fonts/banchob.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i, i:hover {
+	color: rgba(30,43,54,1);
+}
+
+i:hover {
+	color: rgba(30,43,54,1);
+	opacity: 1;
+}
+
+
+edge, edge i {
+	color: rgba(212,220,225,.7);
+}
+
+edge:hover, edge i:hover {
+	color: rgba(212,220,225,1);
+}
+
+toolbar {
+	background-color: rgba(20, 33, 44, .1);
+	color: #5D6972;
+}
+
+toolbarleft {
+	color: #3B4851;
+	background-color: rgba(20, 33, 44, .2);
+}
+
+toolbarleft input {
+	background: rgba(255,255,255,.5);
+	color: rgba(30,43,54,1);
+}
+
+statusbarleft {
+	color: rgba(20, 33, 44, .5);
+	background-color: rgba(20, 33, 44, .3);
+}
+
+statusbar {
+	background-color: rgba(20, 33, 44, .2);
+}
+
+statusbar status {
+	color: rgba(30,43,54,1);
+}
+
+controls {
+	background-color: rgba(20, 33, 44, .1);
+}
+
+sidebar {
+	color: rgba(30,43,54,1);
+	background-color: rgba(20, 33, 44, .1);
+}
+
+sidebarmenu {
+	color: rgba(30,43,54,1);
+	background-color: rgba(20, 33, 44, .2);
+}
+
+#itemlist, item {
+	border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+#itemlist item {
+	border-bottom: 1px solid rgba(20, 33, 44,  .05);
+}
+
+#itemlist item:hover {
+	color: rgba(30,43,54,1);
+	background: rgba(255,255,255,.5)
+}
+
+/* colours */
+
+.red {
+	color: rgba(226,68,86,1) !important
+}
+
+.green {
+	color: #bce046;
+}
+
+status .green {
+	color: #8cc046;
+}
+
+.blue {
+	color: #1B73A7 !important;
+}
+
+.gold {
+	color: #FDC02D !important
+}
+
+.silver {
+	color: rgba(20, 33, 44, 0.5) !important;
+}
+
+.black {
+	color: rgba(23,34,43,1);
+}
+.blackbg {
+	background-color: rgba(23,34,43,1);
+}
+
+.charcoal {
+	color: rgba(30,43,54,1);
+}
+
+.charcoalbg {
+	background-color: rgba(30,43,54,1);
+}
+
+/* Fonts */
+
+.script, item {
+	font-family: 'phake' !important;
+	font-size: 1.25rem !important;
+}
+
+.banchob {
+	font-family: 'banchob';
+	font-size: 18px;
+}
+
+.slider {
+	background-color: rgba(212,220,225,1);
+}
+
+.slider:before {
+	background-color: #fff;
+}
+
+input:checked+.slider {
+	background-color: #acd056;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #acd056;
+}
+
+.selecteditem {
+	background: rgba(255,255,255,.8) !important;
+}
+
+.example {
+	background: rgba(20, 33, 44, 0.03);
+}
+
+.entrycaption {
+	color: rgba(30,43,54,.7);
+}
+
+input.phonemic {
+	color: rgba(20, 33, 44, 0.5);
+}
+
+#settings {
+	background: #2D3A44;
+	color: #D1D9DE;
+}
+
+#settings table, #settings table tr, #settings table tr td {
+	color: #D1D9DE;
+}
+
+#settings .slider {
+	background-color: #CB3D50
+}
+
+#settings .slider:before {
+	background-color: #D1D9DE;
+}
+
+#settings input:checked+.slider {
+	background-color: #acd056;
+}
+
+.slider.round {
+	border-radius: 16px;
+	box-shadow:
+		inset 0 0 6px 2px rgba(0,0,0,0.35),
+		0 -0px 20px 8px rgba(255,255,255,.05)
+}
+
+.slider.round:before {
+	border-radius: 50%;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,0.35);
+}
