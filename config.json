@@ -1,16 +1,25 @@
 {
 	"config": {
-		"stayoffline": true,
+		"stayoffline": false,
 		"serverfirst": false,
-		"constantbackups": false,
+		"constantbackups": true,
 		"livesynching": false
 	},
-	"username": "ailot",
+	"user": {
+		"name": "ailot",
+		"pass": "hailowng"
+	},
 	"project": {
 		"language": "phake",
 		"showscript": true
 	},
-	"ui": {
-		"language": "en"
+	"display": {
+		"language": "en",
+		"script": true,
+		"cjk": true,
+		"count": {
+			"definition": "tiangan",
+			"example": "dizhi"
+		}
 	}
 }
