@@ -1,8 +1,7 @@
 {
 	"config": {
 		"stayoffline": false,
-		"serverfirst": false,
-		"constantbackups": true,
+		"constantbackups": false,
 		"livesynching": false
 	},
 	"user": {
@@ -10,16 +9,21 @@
 		"pass": "hailowng"
 	},
 	"project": {
-		"language": "phake",
+		"language": "Phake",
+		"sortorder": "phake_font",
 		"showscript": true
 	},
 	"display": {
 		"language": "en",
 		"script": true,
-		"cjk": true,
+		"cjk": false,
 		"count": {
-			"definition": "tiangan",
-			"example": "dizhi"
+			"definition": "myanmar",
+			"example": "bullet"
+		},
+		"wordlist": {
+			"phonemic": true,
+			"definition": true
 		}
 	}
 }
