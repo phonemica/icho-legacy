@@ -20,5 +20,6 @@ Ichō is still in development. It will be undergoing usability testing in Januar
 
 ## Screenshot
 
-pre-release version:
-![screenshot](http://phonemica.net/github/icho20170212.png)
+![screenshot](http://phonemica.net/github/icho20170213a.png)
+
+![screenshot](http://phonemica.net/github/icho20170213b.png)
