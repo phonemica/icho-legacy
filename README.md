@@ -18,8 +18,8 @@ Feature list coming soon.
 
 Ichō is still in development. It will be undergoing usability testing in January. Once we're sure it's stable and works as it should on a wide range of hardware, we'll share the details of how to get a copy of your own.
 
-## Screenshot
+## Screenshots
 
-![screenshot](http://phonemica.net/github/icho20170213a.png)
+![UI](http://phonemica.net/github/icho20170213a.png)
 
-![screenshot](http://phonemica.net/github/icho20170213b.png)
+![Settings](http://phonemica.net/github/icho20170213b.png)
