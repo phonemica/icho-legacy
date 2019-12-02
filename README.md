@@ -1,3 +1,6 @@
+| NOTE: This is a legacy proof of concept for Ichō made with Electron.js. Please do not make changes to this repo. The live version is elsewhere. |
+| --- |
+
 # Ichō
 Ichō is a collaborative dictionaries development tool. It is meant to provide an easy way for people to document their under-represented languages. Presently, many people are using Toolbox, which works fine but isn't as intuitive for some people as it could be. Ichō is meant to be an easier-to-teach alternative for people in remote areas who'd like to do the work but lack the training.
 
