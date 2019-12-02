@@ -1,4 +1,4 @@
-| NOTE: This is a legacy proof of concept for Ichō made with Electron.js. Please do not make changes to this repo. The live version is elsewhere. |
+| NOTE: This is a legacy proof of concept for Ichō made with Electron.js. The current version is elsewhere. |
 | --- |
 
 # Ichō
